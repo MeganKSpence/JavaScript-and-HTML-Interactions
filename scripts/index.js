@@ -1,1 +1,1 @@
-console.log("index.js is linked to index.html"); //Debugging line to console ensuring JavaScript Link
+console.log("You made it to index.js");

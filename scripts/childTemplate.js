@@ -1,1 +1,1 @@
-console.log("I made it!"); //Debugging line to console ensuring JavaScript Link
+console.log("You made it to childTemplate.js");
