@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # HTML Form and JavaScript Interactions
 Verifying Data and Executing JavaScript Through Functions
 
@@ -49,3 +50,6 @@ See: https://github.com/QEHS-Websites/JavaScript-Sandbox/tree/master/Form%20HTML
 - Two Number Comparison
 
 ---
+=======
+JavaScript and HTML Interactions
+>>>>>>> 069b8cdf29e008ac4d7d2e98ea44c2f23ee33457
