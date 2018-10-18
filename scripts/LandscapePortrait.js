@@ -1,5 +1,23 @@
-console.log("You made it to childTemplate.js!"); //debugging line to the consolensuring Javascript link
+// console.log("You made it to LandscapePotrait.js");
 
+let stop = false;
+
+function testNaN (number) {
+  console.log(stop);
+  if ( isNaN (number)) {
+    stop = true;
+    return "Type a Real Number"
+  } else {
+    return "Input validated"
+  }
+}
+
+function geometry (width, height) { // notice tese parameters
+  if (width == height) return 'sqare';
+  return (width < height) ? 'portrtait' : 'landscape';
+}
+
+// This coding illustrates the advanced meathod
 function main () {
 
   let firstNumber, secondNumber, text;
