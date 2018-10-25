@@ -1,4 +1,4 @@
-// console.log("You made it to DemeritPoints.js");
+console.log("You made it to DemeritPoints.js");
 
 let stop = false;
 
@@ -39,7 +39,7 @@ function main () {
   // get the value of the hieght Input Field, id="textfield2"
 
   if (stop == true) {
-    document.getElementById("large").innerHTML = "Restart bacause I said so." //Change to more appropriate message
+    document.getElementById("large").innerHTML = "Please input a real number, no text is to be written" //Change to more appropriate message
   }
   else {
     console.log( geometry (firstNumber)); // deiference between calling functions between calling arguments and sending parameter's, local variables

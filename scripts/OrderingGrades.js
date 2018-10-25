@@ -1,6 +1,4 @@
-// console.log("You made it to LandscapePotrait.js");
-
-// console.log("You made it to LandscapePotrait.js");
+console.log("You made it to the OrderingGrades.js");
 
 let stop = false;
 
@@ -48,7 +46,7 @@ function main () {
   document.getElementById("validityTest2").innerHTML = testNaN (secondNumber);
 
   if (stop == true) {
-    document.getElementById("large").innerHTML = "Restart bacause I said so." //Change to more appropriate message
+    document.getElementById("large").innerHTML = "Please input a real number, no text is to be written" //Change to more appropriate message
   }
   else {
     console.log("My grade is: ", geometry (firstNumber, secondNumber), "because my average is: " + geometry2 (firstNumber, secondNumber)); // deiference between calling functions between calling arguments and sending parameter's, local variables

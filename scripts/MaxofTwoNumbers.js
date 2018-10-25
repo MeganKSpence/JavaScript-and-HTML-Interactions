@@ -1,3 +1,5 @@
+console.log("You made it to the MaxofTwoNumbers.js");
+
 let stop = false;
 
 function testNaN (number) {
@@ -35,7 +37,7 @@ function main () {
   document.getElementById("validityTest2").innerHTML = testNaN (secondNumber);
 
   if (stop == true) {
-    document.getElementById("large").innerHTML = "Restart bacause I said so." //Change to more appropriate message
+    document.getElementById("large").innerHTML = "Please input a real number, no text is to be written" //Change to more appropriate message
   }
   else {
     console.log("What did you say?", geometry (firstNumber, secondNumber)); // deiference between calling functions between calling arguments and sending parameter's, local variables

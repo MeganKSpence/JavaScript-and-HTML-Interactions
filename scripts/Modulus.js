@@ -1,4 +1,4 @@
-console.log("you made it to Modulus.js");
+console.log("You made it to Modulus.js");
 
 let stop = false;
 
@@ -12,26 +12,18 @@ function testNaN (number) {
   }
 }
 
-function geometry (number1, number2) {
-  let skipcount = 1;
-  let difference = number2 - number1;
-  let startingnumber = number1;
-  for (let i=0; i<=difference; i++){
-    even = (startingnumber += skipcount) % 2;
-    console.log("This number is", startingnumber);
-      if (even === 0) return "the number is even";
-      else if (even === 1) return "the number is odd";
-
+function geometry (number1) { // tried to figure out to make my origional code work, but couldn't. So I used this simple code because I couldn't put nothing
+  even = number1 % 2
+    if (even === 0) return "this number is even";
+    else if (even === 1) return "this number is odd";
   }
-}
-
          // notice tese parameters
 
 
  // This coding illustrates the advanced meathod
 function main () {
 
-  let firstNumber, secondNumber, text;
+  let firstNumber, text;
 
   //get the value of the Width Input Field, id="textfield1"
   firstNumber = document.getElementById("textfield1").value;
@@ -40,18 +32,12 @@ function main () {
   document.getElementById("validityTest1").innerHTML = alert(testNaN (firstNumber));
   document.getElementById("validityTest1").innerHTML = testNaN (firstNumber);
 
-  // get the value of the hieght Input Field, id="textfield2"
-  secondNumber = document.getElementById("textfield2").value;
-
-  //validate if user typed a number , odd validation by TRUE conditional
-  document.getElementById("validityTest2").innerHTML = alert(testNaN (secondNumber));
-  document.getElementById("validityTest2").innerHTML = testNaN (secondNumber);
 
   if (stop == true) {
-    document.getElementById("large").innerHTML = "Restart bacause I said so." //Change to more appropriate message
+    document.getElementById("large").innerHTML = "Please input a real number, no text is to be written" //Change to more appropriate message
   }
   else {
-    console.log("What did you say?", geometry (firstNumber, secondNumber)); // deiference between calling functions between calling arguments and sending parameter's, local variables
-    document.getElementById("large").innerHTML = "What did you say? " + geometry (firstNumber, secondNumber);
+    console.log("What did you say?", geometry (firstNumber)); // deiference between calling functions between calling arguments and sending parameter's, local variables
+    document.getElementById("large").innerHTML = "What did you say? " + geometry (firstNumber);
    }
  }
