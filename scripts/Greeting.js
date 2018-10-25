@@ -27,11 +27,10 @@ function main () {
   firstNumber = document.getElementById("textfield1").value;
 
   //validate if user typed a number, odd validation by TRUE conditional
-  document.getElementById("valadityTest1").innerHTML = alert( testNaN (firstNumber));
-  document.getElementById("valadityTest1").innerHTML = testNaN (firstNumber);
+  document.getElementById("validityTest1").innerHTML = alert(testNaN (firstNumber));
+  document.getElementById("validityTest1").innerHTML = testNaN (firstNumber);
 
-  // get the value of the Hieght Input Field, id="textfield2"
-  console.log(stop);
+  // get the value of the hieght Input Field, id="textfield2"
 
   if (stop == true) {
     document.getElementById("large").innerHTML = "Restart bacause I said so." //Change to more appropriate message

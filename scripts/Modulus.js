@@ -12,18 +12,23 @@ function testNaN (number) {
   }
 }
 
-function geometry (number1, number2) { // notice tese parameters
-  let (number2 - number1) = difference
+function geometry (number1, number2) {
+  let skipcount = 1;
+  let difference = number2 - number1;
+  let startingnumber = number1;
   for (let i=0; i<=difference; i++){
     even = (startingnumber += skipcount) % 2;
-      if (even === 0) return 'the number is even'
-      else if (even === 1) {
-        console.log("The number is ", number[0]+i, " and the number is even");
-    }
+    console.log("This number is", startingnumber);
+      if (even === 0) return "the number is even";
+      else if (even === 1) return "the number is odd";
+
   }
 }
 
-// This coding illustrates the advanced meathod
+         // notice tese parameters
+
+
+ // This coding illustrates the advanced meathod
 function main () {
 
   let firstNumber, secondNumber, text;
@@ -48,5 +53,5 @@ function main () {
   else {
     console.log("What did you say?", geometry (firstNumber, secondNumber)); // deiference between calling functions between calling arguments and sending parameter's, local variables
     document.getElementById("large").innerHTML = "What did you say? " + geometry (firstNumber, secondNumber);
-  }
-}
+   }
+ }
