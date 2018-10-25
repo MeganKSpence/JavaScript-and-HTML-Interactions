@@ -1,5 +1,7 @@
 // console.log("You made it to LandscapePotrait.js");
 
+// console.log("You made it to LandscapePotrait.js");
+
 let stop = false;
 
 function testNaN (number) {
@@ -12,9 +14,18 @@ function testNaN (number) {
   }
 }
 
-function geometry (width, height) { // notice tese parameters
-  if (width == height) return 'sqare';
-  return (width < height) ? 'portrtait' : 'landscape';
+function geometry (marks) { // notice tese parameters
+  const average = geometry2 (marks);
+  if (average > 89) return 'A';
+  if (average > 79) return 'B';
+  if (average > 69) return 'C';
+  if (average > 59) return 'D';
+  return 'F';
+}
+function geometry2 (marks) {
+  let sum = 0;
+  for (let mark of marks) sum += mark;
+  return sum / marks.length;
 }
 
 // This coding illustrates the advanced meathod
@@ -40,7 +51,7 @@ function main () {
     document.getElementById("large").innerHTML = "Restart bacause I said so." //Change to more appropriate message
   }
   else {
-    console.log("What did you say?", geometry (firstNumber, secondNumber)); // deiference between calling functions between calling arguments and sending parameter's, local variables
-    document.getElementById("large").innerHTML = "What did you say? " + geometry (firstNumber, secondNumber);
+    console.log("My grade is: ", geometry (firstNumber, secondNumber), "because my average is: " + geometry2 (firstNumber, secondNumber)); // deiference between calling functions between calling arguments and sending parameter's, local variables
+    document.getElementById("large").innerHTML = "My grade is: " + geometry (firstNumber, secondNumber), "because my grade is: " + geometry2(firstNumber, secondNumber);
   }
 }

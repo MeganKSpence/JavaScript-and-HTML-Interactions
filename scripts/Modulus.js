@@ -1,4 +1,4 @@
-// console.log("You made it to LandscapePotrait.js");
+console.log("you made it to Modulus.js");
 
 let stop = false;
 
@@ -12,9 +12,15 @@ function testNaN (number) {
   }
 }
 
-function geometry (width, height) { // notice tese parameters
-  if (width == height) return 'sqare';
-  return (width < height) ? 'portrtait' : 'landscape';
+function geometry (number1, number2) { // notice tese parameters
+  let (number2 - number1) = difference
+  for (let i=0; i<=difference; i++){
+    even = (startingnumber += skipcount) % 2;
+      if (even === 0) return 'the number is even'
+      else if (even === 1) {
+        console.log("The number is ", number[0]+i, " and the number is even");
+    }
+  }
 }
 
 // This coding illustrates the advanced meathod

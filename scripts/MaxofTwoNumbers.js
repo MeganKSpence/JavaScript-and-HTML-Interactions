@@ -1,5 +1,3 @@
-// console.log("You made it to LandscapePotrait.js");
-
 let stop = false;
 
 function testNaN (number) {
@@ -13,8 +11,8 @@ function testNaN (number) {
 }
 
 function geometry (width, height) { // notice tese parameters
-  if (width == height) return 'sqare';
-  return (width < height) ? 'portrtait' : 'landscape';
+  if (width == height) return 'the numbers are the same';
+  return (width < height) ? 'the second number is bigger' : 'the first number is bigger';
 }
 
 // This coding illustrates the advanced meathod
